@@ -1,3 +1,5 @@
+<!-- Ahmad Lutfi -->
+
 @extends('master.layout')
 
 @section('content')
@@ -18,7 +20,7 @@
                                 <div class="form-group rounded p-3 mb-3">
                                     <h5 style="font-family: Helvetica"><b>{{ __('PAYMENT METHOD') }}</b></h5>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="payment_method" id="fpx_bank"
+                                        <input class="form-check-input" type="radio" name="payment_method" id="fpx_bank" checked
                                             value="fpx">
                                         <label class="form-check-label" for="fpx_bank">
                                             {{ __('FPX Bank') }}
@@ -54,7 +56,7 @@
                                 <div class="form-group rounded p-3 mb-3">
                                     <h5 style="font-family: Helvetica"><b>{{ __('ORDER TYPE') }}</b></h5>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="order_type" id="pickup" selected
+                                        <input class="form-check-input" type="radio" name="order_type" id="pickup" checked
                                             value="pickup">
                                         <label class="form-check-label" for="pickup">
                                             {{ __('Pickup') }}
@@ -85,7 +87,7 @@
                                         </label>
                                     </div>
 
-                                    <div class="form-group rounded p-3 mb-3" id="specificTimeInput" display="none">
+                                    <div class="form-group rounded p-3 mb-3" id="specificTimeInput" style="display: none;">
                                         <label
                                             for="specific_time_input">{{ __('Specific Time (if applicable)') }}</label>
                                         <input type="time" class="form-control" id="specific_time_input"
