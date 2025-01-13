@@ -18,6 +18,8 @@ Route::get('/menu1', function () {
 
 Route::get('/orders/{id}', [OrderController::class, 'show'])->name('orders.show');
 
-Route::get('/payment', function () {
+Route::get('/payment-page', function () {
     return view('payment');
 });
+
+Route::post('/pay', [PaymentController::class, 'pay'])->name('orders.pay');

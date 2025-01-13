@@ -9,6 +9,6 @@ class PaymentController extends Controller
 {
     public function pay(PaymentRequest $request)
     {
-        return view('payment');
+        
     }
 }
